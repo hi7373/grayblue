@@ -1,6 +1,8 @@
 <body style = "background-image:linear-gradient(gray, blue);">
   <h1 class = "heading">Welcome to Gray Blue</h1>
   <p class = "paragraph">This site contains links to several of my projects, including games, useful tools and bookmarklets, and other fun projects for you to download.</p>
+  <h2 class = "heading2">Bookmarklets</h2>
+  <p class = "paragraph">Bookmarklets are little snippets of javascript that can be ran when clicked on from your bookmarks bar. Here, you can click the links to try mine out, and if you like them, you can drag them to your bookmarks bar.</p>
   <a class = "link" href = 'javascript:var y = 0;var x = 0;window.document.addEventListener("keydown", function(press){ if(press.key == "ArrowDown"){  x += 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; }; if(press.key == "ArrowUp"){  x -= 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; }; if(press.key == "ArrowLeft"){  y -= 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; }; if(press.key == "ArrowRight"){  y += 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; };});'>Arrow Keys 3d View</a>
 </body>
 <style>
@@ -8,6 +10,11 @@
     text-align: center;
     font-size: 300%;
     color: white;
+  }
+  .heading2{
+    font-size: 200%;
+    color: white;
+    padding: 20px;
   }
   .paragraph{
     padding: 20px;

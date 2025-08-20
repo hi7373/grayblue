@@ -2,8 +2,11 @@
   <h1 class = "heading">Welcome to Gray Blue</h1>
   <p class = "paragraph">This site contains links to several of my projects, including games, useful tools and bookmarklets, and other fun projects for you to download.</p>
   <h2 class = "heading2">Bookmarklets</h2>
-  <p class = "paragraph">Bookmarklets are little snippets of javascript that can be ran when clicked on from your bookmarks bar. Here, you can click the links to try mine out, and if you like them, you can drag them to your bookmarks bar.</p>
+  <p class = "paragraph">Bookmarklets are little snippets of JavaScript that can be ran when clicked on from your bookmarks bar. Here, you can click the links to try mine out, and if you like them, you can drag them to your bookmarks bar.</p>
   <a class = "link" href = 'javascript:var y = 0;var x = 0;window.document.addEventListener("keydown", function(press){ if(press.key == "ArrowDown"){  x += 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; }; if(press.key == "ArrowUp"){  x -= 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; }; if(press.key == "ArrowLeft"){  y -= 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; }; if(press.key == "ArrowRight"){  y += 3;  document.body.style.transform = "rotateY("+y+"deg) rotateX("+x+"deg)"; };});'>Arrow Keys 3d View</a>
+  <p class = "paragraph">Use the arrow keys to rotate everything on a page in 3d.</p>
+  <a class = "link" href = 'javascript:var mil = window.prompt("How many seconds would you like to pause the webpage for?%22);%20var%20time%20=%20new%20Date().getTime();%20while(time%20+%20mil*1000%20%3E=%20new%20Date().getTime()){%20}'>Webpage Pause Button</a>
+  <p class = "paragraph">This bookmarklet can pause code execution on a webpage for however many seconds you want. This is very handy for webpages that don't allow pausing.</p>
 </body>
 <style>
   .heading{

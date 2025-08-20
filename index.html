@@ -1,3 +1,11 @@
+<script>
+ var clicks = 0;
+ var p = document.getElementById("clicks");
+ function more(){
+   clicks += 1;
+   p.innerHTML = clicks;
+ }
+</script>
 <body style = "background-image:linear-gradient(gray, blue);">
   <h1 class = "heading">Welcome to Gray Blue</h1>
   <p class = "paragraph">This site contains links to several of my projects, including games, useful tools and bookmarklets, and other fun projects for you to download.</p>
@@ -10,7 +18,8 @@
   <div id = "square" class = "square"></div>
   <a class = "link" href = "javascript:alert(window.innerHeight); alert(window.innerWidth);">Get the inner height and width of the window (in pixels)</a>
   <p class = "paragraph">This bookmarklet is handy for people like me who wonder about things like these. It's really pretty boring; the next ones are a bit cooler.</p>
-  <div id = "clicker" class = "button">Click Counter</div>
+  <div id = "clicker" class = "button" onclick = "more()">Click Counter</div>
+  <p class = "paragraph" id = "clicks">0</p>
   
 </body>
 <style>
